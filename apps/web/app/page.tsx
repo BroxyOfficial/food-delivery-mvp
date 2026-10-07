@@ -149,6 +149,8 @@ export default function HomePage() {
           <div className="hero-visual">
             <div className="glow glow-one" />
             <div className="glow glow-two" />
+            <div className="floating-badge badge-one">🔥 20% off</div>
+            <div className="floating-badge badge-two">⭐ 4.9 rated</div>
 
             <div className="delivery-card">
               <div className="delivery-art" />
@@ -324,4 +326,3 @@ export default function HomePage() {
     </div>
   );
 }
-
