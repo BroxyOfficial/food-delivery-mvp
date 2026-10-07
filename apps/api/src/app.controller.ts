@@ -10,4 +10,13 @@ export class AppController {
       timestamp: new Date().toISOString(),
     };
   }
+
+  @Get('status')
+  getStatus() {
+    return {
+      app: 'food-delivery-mvp',
+      mode: 'mvp',
+      features: ['restaurants', 'orders', 'cart', 'tracking', 'delivery'],
+    };
+  }
 }

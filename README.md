@@ -1,25 +1,57 @@
 # food-delivery-mvp
 
-A monorepo starter for a food delivery platform inspired by Zomato/Swiggy.
+A robust MVP starter for a food delivery app inspired by Zomato and Swiggy.
 
-## Tech stack
-- Web: Next.js + Tailwind CSS
+## Stack
+- Web: Next.js + React + TypeScript
 - Mobile: Expo + React Native
 - API: NestJS + Prisma + PostgreSQL
-- Shared: TypeScript utilities, DTOs, and constants
-
-## Apps
-- `apps/web`: customer web app and admin dashboard shell
-- `apps/mobile`: customer and delivery app shell
-- `apps/api`: backend API with a health route
 
 ## Quick start
 
-```bash
-npm install
-npm run dev:web
-npm run dev:api
-```
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-## Notes
-This repository is intentionally scaffolded as an MVP foundation. It is designed for rapid iteration and extension into restaurant listings, cart/checkout, order tracking, and delivery management.
+2. Configure your database in `.env` for Prisma:
+   ```bash
+   DATABASE_URL=postgresql://user:password@localhost:5432/food_delivery
+   ```
+
+3. Generate and push Prisma schema:
+   ```bash
+   npm run db:generate
+   npm run db:push
+   ```
+
+4. Start the API:
+   ```bash
+   npm run dev:api
+   ```
+
+5. Start the web app:
+   ```bash
+   npm run dev:web
+   ```
+
+6. Start the mobile app:
+   ```bash
+   npm run dev:mobile
+   ```
+
+## MVP features included
+- Customer landing page
+- Restaurant listing screen
+- Mobile restaurant cards
+- Basic NestJS API
+- Prisma models for users, restaurants, menu, cart, orders, and reviews
+- Seed script for sample restaurants
+
+## Next build plan
+- authentication and profiles
+- cart + checkout
+- restaurant dashboard
+- delivery tracking
+- payment integration
+- admin panel
